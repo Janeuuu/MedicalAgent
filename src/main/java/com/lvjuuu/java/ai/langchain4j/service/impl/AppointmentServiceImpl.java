@@ -5,12 +5,14 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lvjuuu.java.ai.langchain4j.entity.Appointment;
 import com.lvjuuu.java.ai.langchain4j.mapper.AppointmentMapper;
 import com.lvjuuu.java.ai.langchain4j.service.AppointmentService;
+import dev.langchain4j.service.spring.AiService;
+import org.springframework.stereotype.Service;
 
 /**
  * @author lyj20
  * @date 2025/5/13 22:30
  */
-
+@Service
 public class AppointmentServiceImpl extends ServiceImpl<AppointmentMapper, Appointment> implements AppointmentService {
 
 
